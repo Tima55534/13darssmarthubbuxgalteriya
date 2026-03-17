@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta'til va Aliment Hisobi Presentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #D2FF28;
+            --tech-green: #D2FF28;
+            --dark-bg: #1a1a1a;
+            --text-white: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.7);
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-white);
+            /* Standard fonts for better number rendering */
+            font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(210, 255, 40, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(210, 255, 40, 0.05) 0%, transparent 40%);
+        }
+
+
+
+        /* Refined Typography */
+        h1,
+        h2,
+        h3 {
+            color: var(--primary-green);
+            font-family: "Raleway", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        p,
+        li,
+        td,
+        th {
+            color: var(--text-white);
+            line-height: 1.6;
+        }
+
+        strong {
+            color: var(--primary-green);
+        }
+
+        .highlight-box {
+            background: rgba(210, 255, 40, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid rgba(210, 255, 40, 0.3);
+            font-size: 1.4rem;
+            line-height: 1.6;
+        }
+
+        .table-premium {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1.3rem;
+        }
+
+        .table-premium th,
+        .table-premium td {
+            border: 1px solid rgba(210, 255, 40, 0.3);
+            padding: 15px;
+            text-align: left;
+        }
+
+        .table-premium th {
+            background: rgba(210, 255, 40, 0.2);
+            font-weight: 800;
+        }
+
+        .calc-step {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 5px solid var(--primary-green);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(210, 255, 40, 0.1);
+        }
+
+        .spiker-izoh {
+            font-style: italic;
+            opacity: 0.7;
+            font-size: 1.1rem;
+            border-top: 1px dashed rgba(210, 255, 40, 0.3);
+            padding-top: 15px;
+            margin-top: 25px;
+        }
+
+        /* Slide 1 specific */
+        .section-header {
+            font-size: 6rem;
+            font-weight: 800;
+            text-align: center;
+            line-height: 1;
+            margin-bottom: 20px;
+            color: var(--primary-green);
+        }
+
+        .topic-subheader {
+            font-size: 2.2rem !important;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.3;
+            color: #ffffff;
+            max-width: 850px;
+            margin: 0 auto;
+            text-transform: uppercase;
+        }
+
+        .glass-box {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-top: 1px solid rgba(210, 255, 40, 0.2);
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .highlight {
+            color: var(--primary-green);
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slides-container">
+        <!-- Slide 1: Giriş -->
+        <div class="slide active" id="slide-1">
+            <div class="bg-shape bg-shape-1"
+                style="opacity: 0.3; filter: blur(150px); background: var(--primary-green);"></div>
+            <div class="section-header" style="font-size: 4rem;">2-BO'LIM</div>
+            <h1 class="topic-subheader" style="color: #ffffff; margin-bottom: 20px;">KADRLAR VA ISH HAQQI HISOBI</h1>
+            <div
+                style="height: 3px; width: 60px; background: var(--primary-green); margin: 25px auto; border-radius: 10px;">
+            </div>
+            <div style="font-size: 1.6rem; text-align: center; color: rgba(255,255,255,0.8); font-weight: 400;"
+                class="mobile-subtitle">
+                <span class="highlight">Mavzu 13-Dars</span><br>
+                <div style="margin-top: 15px; font-size: 1.8rem; color: #ffffff; font-weight: 700;">
+                    Xodimni ta'tilga chiqarish va soliq oqibatlari
+                </div>
+                <div
+                    style="font-weight: 700; margin-top: 20px; font-size: 1.4rem; color: var(--primary-green); border: 1px solid rgba(210,255,40,0.3); display: inline-block; padding: 10px 30px; border-radius: 50px; background: rgba(210,255,40,0.05);">
+                    Aliment, jarimalar va ushlab qolishlar</div>
+            </div>
+            <div class="bg-shape bg-shape-2" style="opacity: 0.3; filter: blur(120px);"></div>
+        </div>
+
+        <!-- Slide 2: Huquqiy asoslar -->
+        <div class="slide" id="slide-2">
+            <h2>Huquqiy asoslar (Mehnat kodeksi)</h2>
+            <div class="content-box glass-box">
+                <ul class="plan-list">
+                    <li><strong>MK 216-modda:</strong> Har yillik mehnat ta'tili xodimga dam olish va ish qobiliyatini
+                        tiklash uchun beriladi.</li>
+                    <li><strong>Minimal muddat:</strong> 21 kalendar kuni (Eski tahrirda 15 ish kuni edi).</li>
+                    <li><strong>Hisoblash tartibi:</strong> Kalendar kunlarida hisoblanadi. Bayram kunlari ta'til
+                        muddatiga kirmaydi.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 3: Ta’tilga chiqish tartibi -->
+        <div class="slide" id="slide-3">
+            <h2>Ta’tilga chiqish tartibi va navbati</h2>
+            <div class="content-box glass-box">
+                <ul class="plan-list">
+                    <li><strong>Birinchi ish yili:</strong> 6 oy ishlagandan keyin (ayrim toifalar uchun darrov).</li>
+                    <li><strong>Ta'tillar jadvali (Grafik):</strong> Ish yili boshlanishidan oldin tasdiqlanishi shart
+                        (MK 228-modda).</li>
+                    <li><strong>Xabardor qilish:</strong> Kamida 15 kun oldin xabardor qilish shart.</li>
+                </ul>
+                <table class="table-premium">
+                    <thead>
+                        <tr>
+                            <th>Toifa</th>
+                            <th>Ta’til muddati</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Umumiy xodimlar</td>
+                            <td>Kamida 21 kun</td>
+                        </tr>
+                        <tr>
+                            <td>18 yoshga to‘lmaganlar</td>
+                            <td>30 kun</td>
+                        </tr>
+                        <tr>
+                            <td>Nogironligi borlar</td>
+                            <td>30 kun</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Slide 4: Soliq kodeksi -->
+        <div class="slide" id="slide-4">
+            <h2>Soliq kodeksi bo'yicha tushuntirish</h2>
+            <div class="content-box glass-box">
+                <p class="definition">Ta’til pullari — bu mehnatga haq to‘lash tarzidagi daromad (SK 371-modda).</p>
+                <div class="highlight-box">
+                    <strong>Soliq stavkalari:</strong><br>
+                    • JShDS (Daromad solig‘i): 12%<br>
+                    • Ijtimoiy soliq: 12%<br>
+                    • INPS (Shaxsiy pensiya): 0.1% (JShDS dan ushlab qolinadi)
+                </div>
+                <div class="quote-box" style="margin-top: 20px;">
+                    <strong>Muddati:</strong> Ta'til puli ta'til boshlanishidan kamida 3 kun oldin to'lanishi shart (MK
+                    233-modda).
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Amaliy misol -->
+        <div class="slide" id="slide-5">
+            <h2>Amaliy misol</h2>
+            <div class="content-box glass-box">
+                <div class="highlight-box">
+                    <strong>Shart:</strong> Oylik ish haqi 6 000 000 so‘m. 21 kunga ta’tilga chiqmoqda.
+                </div>
+                <div class="calc-step">
+                    <strong>1. O‘rtacha kunlik ish haqi:</strong><br>
+                    6,000,000 ÷ 25.3 = 237,154 so‘m
+                </div>
+                <div class="calc-step">
+                    <strong>2. Ish kunlariga o'tkazish:</strong><br>
+                    21 kalendar kunida 18 ish kuni bor (yakshanbalarsiz).
+                </div>
+                <div class="calc-step">
+                    <strong>3. Umumiy summa:</strong><br>
+                    237,154 × 18 = 4,268,772 so‘m
+                </div>
+                <div class="calc-step">
+                    <strong>4. Soliq ushlanmasi (12%):</strong><br>
+                    4,268,772 × 12% = 512,252 so‘m
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Aliment -->
+        <div class="slide" id="slide-6">
+            <h2>Aliment tushunchasi va huquqiy asos</h2>
+            <div class="content-box glass-box">
+                <ul class="plan-list">
+                    <li><strong>Asos:</strong> Oila kodeksi (96-115 moddalar).</li>
+                    <li><strong>Majburiyat:</strong> Ota-ona voyaga yetmagan bolalariga ta’minot berishi shart.</li>
+                    <li><strong>Ijro hujjati:</strong> Sud buyrug‘i, ijro varaqasi yoki notarial kelishuv.</li>
+                </ul>
+                <div class="highlight-box" style="margin-top: 30px;">
+                    Aliment — bu bolaning ta'minoti uchun qonuniy ushlanma.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Aliment miqdorlari -->
+        <div class="slide" id="slide-7">
+            <h2>Aliment miqdorlari (OK 99-modda)</h2>
+            <div class="content-box glass-box">
+                <p class="definition">Sud tomonidan undiriladigan aliment miqdori:</p>
+                <div class="highlight-box">
+                    • 1 nafar bola uchun: 1/4 qismi (25%)<br>
+                    • 2 nafar bola uchun: 1/3 qismi (33.3%)<br>
+                    • 3 va undan ortiq bola uchun: 1/2 qismi (50%)
+                </div>
+                <div class="quote-box" style="border-left-color: #ffcc00; font-size: 1.2rem;">
+                    <strong>Muhim:</strong> Har bir bola uchun miqdor MHTEKMning 26,5 foizidan kam bo‘lmasligi kerak.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Daromadlar ro'yxati -->
+        <div class="slide" id="slide-8">
+            <h2>Aliment qaysi daromadlardan ushlanadi?</h2>
+            <div class="content-box glass-box">
+                <p style="margin-bottom: 15px;">VM 806-sonli qarori (06.10.2018) asosida:</p>
+                <ul class="plan-list">
+                    <li>✅ Ish haqi (oylik)</li>
+                    <li>✅ Mehnat ta’tili pullari (Otpusknoy)</li>
+                    <li>✅ Mukofot pullari (Premiya)</li>
+                    <li>✅ Ustama va qo‘shimcha to‘lovlar</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 9: Aliment amaliy misol -->
+        <div class="slide" id="slide-9">
+            <h2>Aliment: Amaliy misol</h2>
+            <div class="content-box glass-box">
+                <div class="highlight-box">
+                    <strong>Holat:</strong> 4 000 000 so‘m ta’til puli. 1 nafar bola uchun (1/4) aliment.
+                </div>
+                <div class="calc-step">
+                    <strong>1. Soliqni ayiramiz (12%):</strong><br>
+                    4,000,000 - 480,000 = 3,520,000 so‘m
+                </div>
+                <div class="calc-step">
+                    <strong>2. Alimentni hisoblaymiz (1/4):</strong><br>
+                    3,520,000 ÷ 4 = 880,000 so‘m
+                </div>
+                <div class="calc-step" style="background: rgba(210, 255, 40, 0.15);">
+                    <strong>3. Xodim qo‘liga oladi:</strong><br>
+                    3,520,000 - 880,000 = 2,640,000 so‘m
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Maksimal ushlanma -->
+        <div class="slide" id="slide-10">
+            <h2>Maksimal ushlanma miqdori</h2>
+            <div class="content-box glass-box">
+                <div class="highlight-box" style="border-left: 8px solid var(--primary-green);">
+                    <strong>MK 269-modda:</strong><br>
+                    Odatda ushlanmalarning umumiy miqdori 50% dan oshmasligi kerak.
+                </div>
+                <div class="highlight-box" style="border-left: 8px solid #ff4444; background: rgba(255, 68, 68, 0.1);">
+                    <strong>LEKIN:</strong><br>
+                    Aliment majburiyatlari bo‘yicha ushlanmalar miqdori ish haqining <strong>70% gacha</strong> yetishi
+                    mumkin.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Natijalar -->
+        <div class="slide" id="slide-11">
+            <h2>Dars Natijalari</h2>
+            <div class="content-box glass-box">
+                <ul class="plan-list">
+                    <li>✅ Ta'til minimal 21 kun ekanligini bildik.</li>
+                    <li>✅ Ta'til puli kalendar kuniga qarab, lekin ish kuniga to'lanishini o'rgandik.</li>
+                    <li>✅ Aliment miqdorlari va qaysi daromadlardan ushlanishini bildik.</li>
+                    <li>✅ Soliqlar (12%) va Alimentning hisob-kitob ketma-ketligini o'rgandik.</li>
+                    <li>✅ Maksimal ushlanma chegaralarini (50% va 70%) tahlil qildik.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 12: Yakun -->
+        <div class="slide" id="slide-12">
+            <div class="bg-shape bg-shape-1" style="animation: pulse 3s infinite;"></div>
+            <div class="bg-shape bg-shape-2" style="animation: pulse 3s infinite reverse;"></div>
+            <h1 style="text-align: center; line-height: 1.2;">
+                O'SISH DAN<br>
+                <span
+                    style="color: var(--primary-green); -webkit-text-fill-color: var(--primary-green);">TO'XTAMANG!</span>
+                🚀
+            </h1>
+            <p style="font-size: 1.2rem; color: var(--primary-green); margin-top: 20px; opacity: 0.6;">DARS TUGADI</p>
+            <canvas id="fireworks"
+                style="position: absolute; top:0; left:0; width:100%; height:100%; z-index:-1; pointer-events:none;"></canvas>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="controls">
+        <div class="control-btn" onclick="prevSlide()">❮</div>
+        <div class="control-btn" onclick="nextSlide()">❯</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
